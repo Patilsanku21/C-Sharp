@@ -1,0 +1,26 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace exp7
+{
+    sealed class SealedClass
+    {
+        public int Add(int a,int b)
+        {
+            return a + b;
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            SealedClass slc = new SealedClass();
+            int total = slc.Add(6, 4);
+            Console.WriteLine("Total = " + total.ToString());
+            Console.ReadKey();
+        }
+    }
+}
